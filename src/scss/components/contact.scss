@@ -1,0 +1,27 @@
+.inst {
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.number-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Muller', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 150%;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    &:hover {
+        background-color: #ffce85;
+        color: #ffffff;
+    }
+}

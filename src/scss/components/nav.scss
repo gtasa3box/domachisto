@@ -1,0 +1,31 @@
+.nav {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Muller',sans-serif;
+    text-transform: uppercase;
+    width: 688px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__elem {
+        color: #353535;
+        padding: 0 35px;
+        transition: 0.3s ease;
+        position: relative;
+        span {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 3px 0 3px;
+            position: absolute;
+            top: 35%;
+            right: 20px;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            border-color: transparent transparent transparent transparent;
+            border-top-color: #353535;
+        }
+    }
+}
