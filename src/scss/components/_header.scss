@@ -1,5 +1,8 @@
 .header {
     width: 100%;
+    background-color: rgba($color: white, $alpha: 0.5);
+    z-index: 10;
+    position: relative;
     &__content {
         display: flex;
         align-items: center;

@@ -1,0 +1,53 @@
+.intro {
+    position: relative;
+    height: 890px;
+    background-color: #F5F5F5;
+    &__content {
+        padding-top: 205px;
+    }
+    &__title {
+        color: #353535;
+        font-size: 58px;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 1.3;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        max-width: 580px;
+    }
+    &__info {
+        color: #353535;
+        font-size: 18px;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 1.4;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        max-width: 430px;
+        margin: 40px 0;
+    }
+    &__btn {
+
+    }
+    &__back {
+        position: absolute;
+        top:-30px;
+        right: -250px;
+        background-image: url(../img/main/intro/dirt.svg);
+        background-position: left;
+        background-size: contain;
+        width: 1111px;
+        height: 872px;
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/main/intro/hand.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 998px;
+            height: 1060px;
+        }
+    }
+    &__animate {
+        margin-top: 40px;
+        margin-left: 300px;
+    }
+}

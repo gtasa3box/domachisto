@@ -15,6 +15,9 @@
         transition: 0.3s ease;
         position: relative;
         cursor: pointer;
+        &:hover {
+            color: #f29304;
+        }
         span {
             content: "";
             width: 0;
@@ -61,8 +64,11 @@
             text-transform: uppercase;
             transition: 0.3s ease;
             cursor: pointer;
+            &:last-child {
+                margin-bottom: 0px;
+            }
             &:hover {
-                opacity: 0.8;
+                color: #f29304;
             }
         }
     }
