@@ -8,3 +8,4 @@ $('#uslugi').on('click', function(){
 });
 //parallax
 $('.move-elem').paroller();
+    
