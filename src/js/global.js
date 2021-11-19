@@ -6,3 +6,5 @@ $('.close').on('click', function(){
 $('#uslugi').on('click', function(){
     $($(this).data('target')).toggleClass('active')  
 });
+//parallax
+$('.move-elem').paroller();
