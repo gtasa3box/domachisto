@@ -8,4 +8,12 @@ $('#uslugi').on('click', function(){
 });
 //parallax
 $('.move-elem').paroller();
+
+//tabs
+$('.tabs__nav-elem').on('click', function(){
+    $('.tabs__nav-elem').removeClass('active')
+    $(this).addClass('active')
+    $('.tabs__elem').removeClass('active')
+    $($(this).data('target')).addClass('active')
+});
     
