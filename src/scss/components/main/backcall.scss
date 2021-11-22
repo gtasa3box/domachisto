@@ -1,0 +1,72 @@
+.backcall {
+    background-color: #F5F5F5;
+    position: relative;
+    .circle {
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        right: initial;
+        left: 100px;
+    }
+    .dirt {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        background-image: url(../img/main/backcall/dirt.svg);
+        width: 930px;
+        height: 930px;
+        top: 0px;
+        right: -200px;
+    }
+    &__content {
+        padding-bottom: 200px;
+        position: relative;
+        z-index: 2;
+    }
+    &__info {
+        color: #353535;
+        font-size: 18px;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 10px 0 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+    input[type=number],input[type=name] {
+        border: none;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        outline: none;
+        font-family: 'Muller',Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        &::placeholder {
+            font-family: 'Muller',Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .checklabel {
+        margin: 20px 0;
+    }
+    input[type=name] {
+        padding: 0 20px;
+    }
+}
+.inplabel {
+    color: #353535;
+    font-weight: 400;
+    font-family: 'Muller',sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
