@@ -46,6 +46,7 @@
     }
     &__img {
         background-size: cover;
+        cursor: pointer;
     }
     .img1 {
         width: 320px;
@@ -61,11 +62,23 @@
         height: 218px;
     }
     &__link {
-        width: 100%;
-        text-align: right;
-        margin-right: 50px;
+        width: 50%;
+        margin: 0 0 0 auto;
+        padding-left: 25px;
+        color: #353535;
+        font-size: 16px;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 1.4;
+        font-weight: 400;
         a {
-
+            color: #ff8562;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+                text-decoration: none;
+            }
         }
     }
 }
