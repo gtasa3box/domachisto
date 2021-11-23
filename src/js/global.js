@@ -92,3 +92,9 @@ $('.slider-employees').slick({
     }
   ]
 });
+
+//questions-drop
+$('.questions__smalltitle').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle()  
+});
