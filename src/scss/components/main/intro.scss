@@ -13,6 +13,8 @@
         font-weight: 700;
         letter-spacing: 0.2px;
         max-width: 580px;
+        position: relative;
+        z-index: 1;
     }
     &__info {
         color: #353535;
@@ -23,9 +25,12 @@
         letter-spacing: 0.2px;
         max-width: 430px;
         margin: 40px 0;
+        position: relative;
+        z-index: 1;
     }
     &__btn {
-
+        position: relative;
+        z-index: 1;
     }
     &__back {
         position: absolute;
@@ -36,6 +41,7 @@
         background-size: contain;
         width: 1111px;
         height: 872px;
+        z-index: 0;
         &:after {
             content: '';
             position: absolute;

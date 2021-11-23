@@ -2,6 +2,14 @@
 $('.close').on('click', function(){
     $($(this).data('target')).toggleClass('not-active')  
 });
+//mob-nav
+$('.burger').on('click', function(){
+  $(this).addClass('not-active')
+  $($(this).data('target')).toggleClass('not-active')  
+});
+$('.close-mobnav').on('click', function(){
+  $('.burger').toggleClass('not-active')  
+});
 //drop-nav
 $('#uslugi').on('click', function(){
     $($(this).data('target')).toggleClass('active')  

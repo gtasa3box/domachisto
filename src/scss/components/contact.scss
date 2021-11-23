@@ -4,4 +4,10 @@
     &:hover {
         opacity: 0.8;
     }
+    path {
+        fill:#353535;
+        @media (max-width:1099px) {
+            fill: #f2950a;
+        }
+    }
 }

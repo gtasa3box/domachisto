@@ -1,4 +1,29 @@
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    @media (max-width:600px) {
+        max-width: 600px;
+        padding: 0 10px;
+    }
+    @media (min-width:601px) and (max-width:1099px) {
+        max-width: 728px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        // max-width: 992px;
+        max-width: 1200px;
+    }
+    @media (min-width:1100px) and (max-width:1220px) {
+        padding: 0 10px;
+    }
+}
+
+// media
+@media (max-width:600px) {
+
+}
+@media (min-width:601px) and (max-width:1099px) {
+
+}
+@media (min-width:1100px) and (max-width:1619px) {
+
 }

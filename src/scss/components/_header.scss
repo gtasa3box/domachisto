@@ -3,22 +3,116 @@
     background-color: rgba($color: white, $alpha: 0.5);
     z-index: 10;
     position: relative;
+    @media (max-width:600px) {
+
+    }
+    @media (max-width:1099px) {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        transition: 0.3s ease;
+        &.not-active {
+            left: 0; 
+        }
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        
+    }
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 80px;
+        @media (max-width:600px) {
+
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (max-width:1099px) {
+            flex-direction: column;
+            padding-top: 40px;
+            align-items: flex-start;
+        }
     }
     &__logo {
-
+        @media (max-width:1099px) {
+            a {
+                width: 120px;
+                height: 94px;
+            }
+        }
     }
     &__nav {
         
     }
     &__soc {
-
+        @media (max-width:1099px) {
+            position: absolute;
+            left: 20px;
+            bottom: 100px;
+            @media (max-height:560px) {
+                left: initial;
+                right: 20px;
+            }
+        }
     }
     &__number {
-
+        @media (max-width:1099px) {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            a {
+                width: 176px;
+                height: 45px;
+                color: white;
+                background-color: #f2950a;
+                font-size: 14px;
+                padding: 0;
+                justify-content: center;
+            }
+        }
+    }
+    .wrapper {
+        @media (max-width:1099px) {
+            max-width: initial;
+            padding-left: 30px;
+        } 
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @media (min-width:1100px) {
+            display: none;
+        }
+    }
+    &__burger {
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        @media (min-width:1100px) {
+            display: none;
+        }
+        .burger {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            background-image: url(../img/burger.svg);
+            background-size: 24px 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            &.not-active {
+                display: none;
+            }
+        }
     }
 }
