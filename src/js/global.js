@@ -111,3 +111,27 @@ $('.questions__smalltitle').on('click', function(){
   $(this).toggleClass('active') 
   $($(this).data('target')).stop(true, false).slideToggle()  
 });
+
+//btn-top 
+$(document).ready(function() { 
+  var button = $('.btn-top');	
+  $(window).scroll (function () {
+    if ($(this).scrollTop () > 300) {
+      button.fadeIn();
+    } else {
+      button.fadeOut();
+    }
+});	 
+button.on('click', function(){
+$('body, html').animate({
+scrollTop: 0
+}, 800);
+return false;
+});		 
+});
+
+//btn-contact
+$('.btn-contact').on('click', function(){
+  $(this).toggleClass('active') 
+  $($(this).data('target')).stop(true, false).slideToggle() 
+});
