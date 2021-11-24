@@ -86,4 +86,14 @@
             font-size: 12px;
         }
     }
+    //all-page
+    &_allpage {
+        &:after {
+            content: none;
+        }
+        padding-bottom: 270px;
+        @media (max-width:600px) {
+            padding: 120px 0;
+        }
+    }
 }

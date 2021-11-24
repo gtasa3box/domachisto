@@ -47,6 +47,10 @@
                 display: none;
             }
         }
+        &.active {
+            color: #f29304;
+            font-weight: 600;
+        }
     }
     &__drop {
         position: absolute;
@@ -83,6 +87,10 @@
             }
             &:hover {
                 color: #f29304;
+            }
+            &.active {
+                color: #f29304;
+                font-weight: 600;
             }
         }
     }

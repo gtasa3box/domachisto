@@ -135,3 +135,49 @@ $('.btn-contact').on('click', function(){
   $(this).toggleClass('active') 
   $($(this).data('target')).stop(true, false).slideToggle() 
 });
+
+//nav active elem 
+$(function() {
+  $('.nav__drop-elem').removeClass('active') 
+  $('.nav__elem').removeClass('active') 
+
+  var loc = window.location.href;
+  if(/technology/.test(loc)) {
+    $('#uluga1').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga2').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga3').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga4').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga5').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga6').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga7').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#uluga8').addClass('active');
+  }
+  //
+  if(/prices/.test(loc)) {
+    $('#price-nav').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('stock-nav').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#about-nav').addClass('active');
+  }
+  if(/technology/.test(loc)) {
+    $('#contact-nav').addClass('active');
+  }
+});
+//nav-active-end

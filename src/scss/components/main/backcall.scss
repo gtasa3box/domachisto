@@ -68,6 +68,56 @@
     input[type=name] {
         padding: 0 20px;
     }
+    //all page
+    &_allpage {
+        background-color: #f29304;
+        .title {
+            color: white;
+        }
+        .backcall__info {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+        .checkbox + label:before {
+            border: 2px solid white;
+        }
+        .checkbox:checked + label::after {
+            background-color: white;
+        }
+        .backcall__content {
+            max-width: 890px;
+        }
+        .circle {
+            filter: brightness(0) invert(1);
+        }
+        .dirt {
+            filter: brightness(0) invert(1);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top:-70px;
+            left: 0;
+            background-image: url(../img/main/benefits/bottom.svg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 70px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            bottom:-70px;
+            left: 0;
+            background-image: url(../img/main/cleaning-process/top.svg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 70px;
+        }
+    }
 }
 .inplabel {
     color: #353535;
