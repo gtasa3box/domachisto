@@ -71,6 +71,7 @@
     //all page
     &_allpage {
         background-color: #f29304;
+        padding-top: 100px;
         .title {
             color: white;
         }
@@ -85,6 +86,9 @@
         }
         .checkbox:checked + label::after {
             background-color: white;
+        }
+        .checkbox:checked + label {
+            color: white;
         }
         .backcall__content {
             max-width: 890px;

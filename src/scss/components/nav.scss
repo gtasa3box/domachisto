@@ -50,6 +50,8 @@
         &.active {
             color: #f29304;
             font-weight: 600;
+            cursor: default;
+            pointer-events: none;
         }
     }
     &__drop {
@@ -91,6 +93,8 @@
             &.active {
                 color: #f29304;
                 font-weight: 600;
+                cursor: default;
+                pointer-events: none;
             }
         }
     }
