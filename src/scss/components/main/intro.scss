@@ -2,8 +2,14 @@
     position: relative;
     height: 890px;
     background-color: #F5F5F5;
+    @media (max-width:600px) {
+        height: 600px;
+    }
     &__content {
         padding-top: 205px;
+        @media (max-width:600px) {
+            padding-top: 100px;
+        }
     }
     &__title {
         color: #353535;
@@ -15,6 +21,12 @@
         max-width: 580px;
         position: relative;
         z-index: 1;
+        @media (max-width:600px) {
+            font-size: 26px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 48px;
+        }
     }
     &__info {
         color: #353535;
@@ -27,6 +39,10 @@
         margin: 40px 0;
         position: relative;
         z-index: 1;
+        @media (max-width:600px) {
+            margin: 20px 0; 
+            font-size: 14px;
+        }
     }
     &__btn {
         position: relative;
@@ -42,6 +58,16 @@
         width: 1111px;
         height: 872px;
         z-index: 0;
+        @media (max-width:600px) {
+            width: 400px;
+            height: 300px;
+            top:300px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 815px;
+            height: 640px;
+            top:500px;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -50,10 +76,24 @@
             background-repeat: no-repeat;
             width: 998px;
             height: 1060px;
+            @media (max-width:600px) {
+                width: 300px;
+                height: 350px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 700px;
+                height: 800px;
+            }
         }
     }
     &__animate {
         margin-top: 40px;
         margin-left: 300px;
+        @media (max-width:600px) {
+            margin-left: 0;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-left: 0;
+        }
     }
 }

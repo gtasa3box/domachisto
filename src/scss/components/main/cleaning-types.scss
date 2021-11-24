@@ -1,11 +1,24 @@
 .cleaning-types {
     height: 810px;
     background-color: #F5F5F5;
+    @media (max-width:600px) {
+        padding: 50px 0;
+        height: initial;
+    }
+    @media (min-width:601px) and (max-width:1099px) {
+        padding: 100px 0;
+        height: initial;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+    
+    }
     .wrapper {
         position: relative;
     }
     &__content {
         padding-top: 100px;
+        position: relative;
+        z-index: 2;
     }
     &__title {
 
@@ -18,10 +31,24 @@
         font-weight: 400;
         max-width: 750px;
         margin: 30px 0;
+        @media (max-width:600px) {
+            margin: 20px 0; 
+            font-size: 14px;
+        }
     }
     &__grid {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width:600px) {
+            justify-content: center;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            justify-content: space-around;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
     }
 }
 
