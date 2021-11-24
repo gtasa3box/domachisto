@@ -32,21 +32,24 @@ $('.slider-examples').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1099,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
+          arrows: false,
+          autoplay: true
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -76,10 +79,10 @@ $('.slider-employees').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1099,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
@@ -87,8 +90,10 @@ $('.slider-employees').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true
       }
     },
     {

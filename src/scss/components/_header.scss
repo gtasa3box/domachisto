@@ -13,9 +13,11 @@
         width: 100vw;
         height: 100vh;
         background-color: white;
+        pointer-events: none;
         transition: 0.3s ease;
         &.not-active {
             left: 0; 
+            pointer-events: auto;
         }
     }
     @media (min-width:1100px) and (max-width:1619px) {
@@ -97,6 +99,7 @@
         position: fixed;
         top: 60px;
         right: 20px;
+        z-index: 20;
         @media (min-width:1100px) {
             display: none;
         }

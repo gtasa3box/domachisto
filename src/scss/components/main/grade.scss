@@ -5,10 +5,15 @@
     }
     &__content {
         padding-bottom: 200px;
+        @media (max-width:600px) {
+            padding-bottom: 50px;
+        }
     }
     &__grid {
         display: flex;
-
+        @media (max-width:600px) {
+            flex-wrap: wrap;
+        }
     }
     &__gradeblock {
         width: 360px;
@@ -23,6 +28,11 @@
         justify-content: center;
         flex: none;
         margin-right: 40px;
+        @media (max-width:600px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
     }
     &__num {
         color: #353535;

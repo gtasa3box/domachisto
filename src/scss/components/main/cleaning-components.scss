@@ -21,6 +21,9 @@
         position: relative;
         z-index: 2;
         padding-bottom: 200px;
+        @media (max-width:600px) {
+            padding: 50px 0 50px;
+        }
     }
 }
 .tabs {
@@ -28,6 +31,9 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
     }
     &__nav-elem {
         font-family: 'Muller',sans-serif;
@@ -40,12 +46,33 @@
         transition: 0.3s ease;
         text-align: center;
         cursor: pointer;
+        @media (max-width:600px) {
+            font-size: 16px;
+            padding-top: 18px;
+            border: 2px solid #c4c4c4;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 16px;
+        }
         &:first-child {
             text-align: left;
+            @media (max-width:600px) {
+                text-align: center;
+            }
+        }
+        &:not(:first-child) {
+            @media (max-width:600px) {
+                border-top: 2px solid transparent;
+            }
         }
         &.active {
             border-bottom: 2px solid #f29304;
             cursor: default;
+            @media (max-width:600px) {
+                background-color: white;
+                border-bottom: 2px solid #f29304;
+                font-weight: 600;
+            }
         }
     }
     &__content {
@@ -54,6 +81,14 @@
     &__elem {
         display: none;
         justify-content: space-between;
+        @media (max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            flex-direction: column;
+            align-items: center;
+        }
         &.active {
             display: flex;
         }
@@ -65,9 +100,20 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        @media (max-width:600px) {
+            max-width: 90%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        @media (min-width:601px) and (max-width:1099px) { 
+            margin-bottom: 30px;
+        }
     }
     &__info {
         max-width: 600px;
+        @media (max-width:600px) {
+            max-width: 90%;
+        }
         ul {
             list-style: url('../img/dot-orange.svg');
             li {
@@ -78,6 +124,14 @@
                 font-weight: 400;
                 max-width: 550px;
                 margin-bottom: 20px;
+                @media (max-width:600px) {
+                    font-size: 12px; 
+                    max-width: 90%;
+                    margin-bottom: 10px;
+                }
+                @media (min-width:601px) and (max-width:1099px) {
+                    font-size: 14px;
+                }
             }
         }
         p {
@@ -86,6 +140,9 @@
             font-family: 'Muller',Arial,sans-serif;
             line-height: 1.6;
             font-weight: 400;
+            @media (max-width:600px) {
+                font-size: 12px;
+            }
             a {
                 text-decoration: underline;
                 color: #f29304;
