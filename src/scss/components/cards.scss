@@ -75,12 +75,32 @@
     padding: 30px;
     position: relative;
     margin: 0 25px 50px;
+    @media (max-width:600px) {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        height: initial;
+        padding-bottom: 80px;
+    }
+    @media (min-width:601px) and (max-width:1099px) {
+        width: 45%;
+        margin: 0;
+        margin-bottom: 50px;
+        height: initial;
+        padding-bottom: 80px;
+    }
     &__title {
         color: #000000;
         font-size: 21px;
         font-family: 'Muller',Arial,sans-serif;
         line-height: 1.55;
         font-weight: 500;
+        @media (max-width:600px) {
+
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 18px;
+        }
     }
     &__info {
         color: #353535;
@@ -89,6 +109,12 @@
         line-height: 1.55;
         font-weight: 400;
         margin-top: 10px;
+        @media (max-width:600px) {
+
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 14px;
+        }
     }
     &__price {
         color: #aaaaaa;
@@ -99,11 +125,23 @@
         position: absolute;
         bottom: 30px;
         left: 30px;
+        @media (max-width:600px) {
+
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 16px;
+        }
     }
     &__btn {
         position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        @media (max-width:600px) {
+            width: 200px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 200px;
+        }
     }
 }
