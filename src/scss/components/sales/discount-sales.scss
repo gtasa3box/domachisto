@@ -1,0 +1,113 @@
+.discount-sales {
+    position: relative;
+    background-color: #f29304;
+    &:after {
+        content: '';
+        position: absolute;
+        top:-70px;
+        left: 0;
+        background-image: url(../img/main/benefits/bottom.svg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 70px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom:-70px;
+        left: 0;
+        background-image: url(../img/main/cleaning-process/top.svg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 70px;
+    }
+    &__content {
+        color: white;
+        padding: 100px 0;
+    }
+    &__title {
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+        @media (max-width:600px) {
+            margin-bottom: 50px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-bottom: 80px;
+        }
+    }
+    &__grid {
+        display: flex;
+        height: 340px;
+        align-items: center;
+        @media (max-width:600px) {
+            flex-direction: column;
+            height: 500px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            
+        }
+    }
+    &__info {
+        width: 50%;
+        @media (max-width:600px) {
+            width: 100%;
+            order: 1;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+    }
+    &__smalltitle {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: 'Muller',sans-serif;
+        @media (max-width:600px) {
+            font-size: 22px;
+            text-align: center;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 32px;
+        }
+    }
+    &__text {
+        margin: 24px 0 30px;
+        font-size: 18px;
+        font-family: 'Muller',sans-serif;
+        line-height: 1.55;
+        max-width: 400px;
+        @media (max-width:600px) {
+            font-size: 14px;
+            text-align: center;
+            max-width: initial;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 16px;
+        }
+    }
+    &__btn {
+        width: 200px;
+        height: 60px;
+        @media (max-width:600px) {
+            margin: 0 auto;
+        }
+    }
+    &__img {
+        display: block;
+        background-image: url(../img/sales/discount/1.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+        @media (max-width:600px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+    }
+}
