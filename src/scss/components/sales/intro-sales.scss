@@ -1,0 +1,44 @@
+.intro-sales {
+    padding: 100px 0 200px;
+    &__content {
+        width: 100%;
+        height: 450px;
+        display: flex;
+    }
+    &__img {
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/sales/intro/1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    &__info {
+        width: 50%;
+        height: 100%;
+        background-color: #f29304;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: 'Muller',sans-serif;
+        text-align: center;
+        line-height: 1.23;
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Muller', sans-serif;
+        max-width: 360px;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 25px;
+        opacity: 0.7;
+    }
+}

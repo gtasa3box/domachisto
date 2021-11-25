@@ -62,14 +62,6 @@ $('.slider-examples').slick({
     ]
 });
 
-//number input flag 
-const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      initialCountry: "ru",
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
-
 //employees slider
 $('.slider-employees').slick({
   dots: false,
@@ -170,8 +162,8 @@ $(function() {
   if(/prices/.test(loc)) {
     $('#price-nav').addClass('active');
   }
-  if(/technology/.test(loc)) {
-    $('stock-nav').addClass('active');
+  if(/sales/.test(loc)) {
+    $('#sales-nav').addClass('active');
   }
   if(/technology/.test(loc)) {
     $('#about-nav').addClass('active');
@@ -181,3 +173,13 @@ $(function() {
   }
 });
 //nav-active-end
+
+
+
+//number input flag ---last js
+const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      initialCountry: "ru",
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
