@@ -165,10 +165,10 @@ $(function() {
   if(/sales/.test(loc)) {
     $('#sales-nav').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/about/.test(loc)) {
     $('#about-nav').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/contacts/.test(loc)) {
     $('#contact-nav').addClass('active');
   }
 });
