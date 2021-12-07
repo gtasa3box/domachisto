@@ -35,6 +35,37 @@
             height: 300px;
         }
     }
+    &__info {
+        margin-top: 70px;
+        @media (max-width:600px) {
+            margin-top: 50px;
+        }
+    }
+    &__title {
+        color: #353535;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.35;
+        font-family: 'Muller',sans-serif;
+        text-align: center;
+        @media (max-width:600px) {
+            font-size: 18px;
+        }
+    }
+    &__text {
+        margin: 0 auto;
+        margin-top: 5px;
+        color: #353535;
+        font-size: 18px;
+        line-height: 1.55;
+        font-weight: 400;
+        font-family: 'Muller';
+        text-align: center;
+        max-width: 620px;
+        @media (max-width:600px) {
+            font-size: 14px;
+        }
+    }
     .slick-arrow {
         width: 40px;
         height: 40px;
@@ -85,5 +116,17 @@
     }
     .slick-dots li.slick-active button:before {
         color: rgba(242,147,4,1);
+    }
+    //work-slider
+    &_work {
+        .slick-arrow {
+            top: 40%;
+        }
+    }
+    .slick-dots {
+        bottom: 145px;
+        @media (max-width:600px) {
+            bottom: 110px;
+        }
     }
 }
