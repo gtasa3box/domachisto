@@ -1,0 +1,95 @@
+.clining-else {
+    position: relative;
+    height: 700px;
+    background-color: #F5F5F5;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 87%;
+        border-width: 5px;
+        border-radius: 50px 0 0 50px;
+        border-color: #f29304;
+        border-style: solid;
+        right: 0;
+        border-right: none;
+        padding: 50px;
+        @media (max-width:900px) {
+            flex-direction: column;
+        }
+    }
+    &__info {
+        width: 45%;
+        @media (max-width:900px) {
+            width: 80%;
+        }
+        @media (max-width:600px) {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+        max-width: 427px;
+    }
+    &__list {
+        ul {
+            list-style: url('../img/dot-orange.svg');
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                color: #353535;
+                font-size: 18px;
+                font-family: 'Muller',Arial,sans-serif;
+                line-height: 1.4;
+                font-weight: 400;
+                max-width: 264px;
+                margin-bottom: 40px;
+                margin-left: 10px;
+                @media (max-width:600px) {
+                    font-size: 12px; 
+                    max-width: 90%;
+                    margin-bottom: 10px;
+                }
+                @media (min-width:601px) and (max-width:1099px) {
+                    font-size: 14px;
+                }
+                @media (max-width:1520px)  {
+                    max-width: initial;
+                    padding-right: 10px;
+                }
+                @media (max-width:1300px) {
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 753px;
+        height: 565px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        flex: none;
+        @media (max-width:1632px) {
+            width: 600px;
+            height: 400px;
+        }
+        @media (max-width:1300px) {
+            width: 400px;
+            height: 250px;
+        }
+        @media (max-width:900px) {
+            order: -1;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        @media (max-width:600px) {
+            width: 100%;
+        }
+    }
+
+}
