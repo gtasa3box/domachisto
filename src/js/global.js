@@ -134,10 +134,10 @@ $(function() {
   $('.nav__elem').removeClass('active') 
 
   var loc = window.location.href;
-  if(/technology/.test(loc)) {
+  if(/kitchen-cleaning/.test(loc)) {
     $('#uluga1').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/cleaning-the-bathroom/.test(loc)) {
     $('#uluga2').addClass('active');
   }
   if(/technology/.test(loc)) {

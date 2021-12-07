@@ -27,4 +27,14 @@
             margin-bottom: 60px;
         }
     }
+    //allpage
+    &_all {
+        &:after {
+            content: none;
+        }
+        .cleaning-process__content {
+            padding-bottom: 200px;
+            padding-top: 100px;
+        }
+    }
 }

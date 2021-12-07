@@ -2,6 +2,13 @@
     position: relative;
     height: 700px;
     background-color: #F5F5F5;
+    @media (max-width:900px) {
+        height: 860px;
+    }
+    @media (max-width:600px) {
+        height: 750px;
+        z-index: 2;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
@@ -61,6 +68,9 @@
                 }
                 @media (max-width:1300px) {
                     width: 45%;
+                }
+                @media (max-width:350px) {
+                    width: 100%;
                 }
             }
         }
