@@ -174,9 +174,18 @@ $(function() {
 });
 //nav-active-end
 
+//header-fixed-top
+
+$(window).scroll(function(){
+  $('.header').toggleClass('fixed-top', $(this).scrollTop() > 300);
+});
+
+//header-fixed-top-end
 
 
-//number input flag ---last js
+
+
+//number input flag ---last js!! (Помещать в конце всего js, если не отработает на странице, код js, который под ним - работать не будет)
 const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
       initialCountry: "ru",
