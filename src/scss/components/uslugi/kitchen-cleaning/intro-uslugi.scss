@@ -23,11 +23,46 @@
             font-size: 42px;
         }
     }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        height: 47px;
+        border-radius: 50px;
+        border: 1px solid #f29304;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    &__tab {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #f29304;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 1.35;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:last-child {
+            border-right: none;
+        }
+        &.active {
+            background-color: #f29304;
+            color: white;
+            font-weight: 600;
+            cursor: default;
+        }
+    }
     &__table {
         table {
             width: 100%;
             border-collapse: collapse;
             table-layout: auto;
+            &.non-active {
+                display: none;
+            }
         }
         thead {
             
@@ -70,6 +105,17 @@
                 font-size: 14px;
                 padding: 20px;
             }
+        }
+    }
+    &__info {
+        font-size: 16px;
+        font-family: 'Muller',Arial,sans-serif;
+        font-weight: 400;
+        line-height: 1.55;
+        margin-top: 30px;
+        @media (max-width:600px) {
+            font-size: 14px;
+            margin-top: 20px;
         }
     }
 }

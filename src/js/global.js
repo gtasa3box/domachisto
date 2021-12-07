@@ -140,10 +140,10 @@ $(function() {
   if(/cleaning-the-bathroom/.test(loc)) {
     $('#uluga2').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/cleaning-of-cottages/.test(loc)) {
     $('#uluga3').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/clear-out/.test(loc)) {
     $('#uluga4').addClass('active');
   }
   if(/technology/.test(loc)) {
@@ -173,6 +173,14 @@ $(function() {
   }
 });
 //nav-active-end
+
+//tabs-uslugi
+$('.intro-uslugi__tab').on('click', function(){
+  $('.intro-uslugi__tab').removeClass('active')
+  $(this).addClass('active')
+  $('table').addClass('non-active')
+  $($(this).data('target')).removeClass('non-active')
+});
 
 //header-fixed-top
 
