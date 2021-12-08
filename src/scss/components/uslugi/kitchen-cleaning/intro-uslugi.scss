@@ -5,6 +5,12 @@
         @media (max-width:600px) {
             padding-top: 50px;
         }
+        &_main {
+            padding: 0 0 100px;
+            @media (max-width:600px) {
+                padding-bottom: 50px;
+            } 
+        }
     }
     &__title {
         color: #353535;
@@ -153,7 +159,6 @@
             font-size: 18px;
             line-height: 1.45;
             font-family: 'Muller',sans-serif;
-            text-align: center;
             font-weight: 400;
             margin-bottom: 50px;
             @media (max-width:600px) {
