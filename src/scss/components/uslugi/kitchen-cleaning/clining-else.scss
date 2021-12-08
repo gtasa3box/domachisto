@@ -38,6 +38,9 @@
     &__title {
         margin-bottom: 30px;
         max-width: 427px;
+        &_big {
+            max-width: 561px; 
+        }
     }
     &__list {
         ul {

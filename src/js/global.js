@@ -146,16 +146,16 @@ $(function() {
   if(/clear-out/.test(loc)) {
     $('#uluga4').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/dry-cleaning-of-upholstered-furniture/.test(loc)) {
     $('#uluga5').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/cleaning-a-neglected-apartment/.test(loc)) {
     $('#uluga6').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/apartment-cleaning-after-renovation/.test(loc)) {
     $('#uluga7').addClass('active');
   }
-  if(/technology/.test(loc)) {
+  if(/washing-windows/.test(loc)) {
     $('#uluga8').addClass('active');
   }
   //

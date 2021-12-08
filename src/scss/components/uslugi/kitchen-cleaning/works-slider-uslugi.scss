@@ -4,5 +4,8 @@
     padding-bottom: 20px;
     &__title {
         margin-bottom: 70px;
+        &_else {
+            max-width: 890px;
+        }
     }
 }

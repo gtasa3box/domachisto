@@ -122,14 +122,26 @@
         .slick-arrow {
             top: 37%;
         }
-    }
-    .slick-dots {
-        bottom: 145px;
-        @media (max-width:600px) {
-            bottom: 110px;
-        }
-        @media (max-width:446px) {
+        .slick-dots {
             bottom: 145px;
+            @media (max-width:600px) {
+                bottom: 110px;
+            }
+            @media (max-width:446px) {
+                bottom: 145px;
+            }
+        }
+    }
+    //else
+    &_else {
+        .slick-dots {
+            bottom: 110px;
+            @media (max-width:600px) {
+                bottom: 85px;
+            }
+            @media (max-width:446px) {
+                bottom: 105px;
+            }
         }
     }
 }
