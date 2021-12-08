@@ -1,6 +1,9 @@
 .list-works {
     padding: 200px 0 50px;
     background-color: #F5F5F5;
+    &_window {
+        padding-top: 100px;
+    }
     &__content {
         border-bottom: 1px solid rgba($color: #353535, $alpha: 0.4);
         padding-bottom: 50px;

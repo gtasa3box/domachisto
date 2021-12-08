@@ -190,9 +190,6 @@ $(window).scroll(function(){
 
 //header-fixed-top-end
 
-
-
-
 //number input flag ---last js!! (Помещать в конце всего js, если не отработает на странице, код js, который под ним - работать не будет)
 const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
