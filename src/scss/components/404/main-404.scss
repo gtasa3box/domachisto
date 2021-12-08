@@ -1,0 +1,37 @@
+.main-404 {
+    background-color: #F5F5F5;
+    &__content {
+        padding: 200px 0;
+        @media (max-width:600px) {
+            padding: 100px 0;
+        }
+    }
+    &__title {
+        color: #f29304;
+        font-size: 60px;
+        font-weight: 500;
+        font-family: 'Muller',sans-serif;
+        line-height: 1.23;
+        text-align: center;
+        @media (max-width:600px) {
+            font-size: 36px;
+        }
+    }
+    &__info {
+        font-family: 'Muller',Arial,sans-serif;
+        font-weight: 400;
+        color: #000;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 40px auto;
+        max-width: 960px;
+        @media (max-width:600px) {
+            font-size: 16px;
+            margin: 20px auto;
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}
