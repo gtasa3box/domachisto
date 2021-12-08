@@ -132,6 +132,19 @@
             height: 70px;
         }
     }
+
+    //popup
+    &_popup {
+        max-width: 760px;
+        display: none;
+        .backcall__btn {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .backcall__content {
+            padding-bottom: 50px;
+        }
+    }
 }
 .inplabel {
     color: #353535;

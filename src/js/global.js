@@ -198,6 +198,15 @@ const phoneInputField = document.querySelector("#phone");
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
 
+//popup
+const phoneInputField4 = document.querySelector("#phone4");
+    const phoneInput4 = window.intlTelInput(phoneInputField4, {
+      initialCountry: "ru",
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+});
+//popup-end
+
 const phoneInputField2 = document.querySelector("#phone2");
     const phoneInput2 = window.intlTelInput(phoneInputField2, {
       initialCountry: "ru",
@@ -211,3 +220,4 @@ const phoneInputField3 = document.querySelector("#phone3");
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
+
