@@ -49,6 +49,7 @@
         cursor: pointer;
         text-decoration: underline;
         transition: 0.3s ease;
+        display: block;
         &:hover {
             text-decoration: none;
             opacity: 0.8;
