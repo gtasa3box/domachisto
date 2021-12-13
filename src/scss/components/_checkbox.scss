@@ -60,3 +60,26 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.checklabel{
+    a {
+        margin: 0 3px;
+        color: #aaaaaa;
+        font-size: 14px;
+        font-family: 'Muller',Arial,sans-serif;
+        line-height: 2;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        display: inline-block;
+        white-space: nowrap;
+        &:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+    p {
+        width: 100%;
+    }
+}
