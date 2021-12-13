@@ -200,5 +200,29 @@
 }
 .fancybox__content {
     padding: 0;
+    .b24-form {
+        padding-bottom: 0 !important;
+    }
 }
-
+.b24-form-header-title {
+    color: #353535 !important;
+    font-size: 48px !important;
+    font-family: 'Muller',Arial,sans-serif !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+    @media (max-width:600px) {
+        font-size: 28px !important;
+    }
+    @media (min-width:601px) and (max-width:1099px) {
+        font-size: 36px !important;
+    }
+}
+.b24-form-sign-text {
+    display: none;
+}
+.b24-form-sign-bx {
+    display: none;
+}
+.b24-form-sign-24 {
+    display: none;
+}
