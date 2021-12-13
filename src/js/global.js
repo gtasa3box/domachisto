@@ -191,4 +191,10 @@ $(window).scroll(function(){
 //header-fixed-top-end
 
 
+//phone mask
+
+$(document).ready(function() {
+  $('input[name="phone"]').mask("+7 (999) 99-99-999");
+});
+
 
