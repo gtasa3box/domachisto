@@ -190,34 +190,5 @@ $(window).scroll(function(){
 
 //header-fixed-top-end
 
-//number input flag ---last js!! (Помещать в конце всего js, если не отработает на странице, код js, который под ним - работать не будет)
-const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      initialCountry: "ru",
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
 
-//popup
-const phoneInputField4 = document.querySelector("#phone4");
-    const phoneInput4 = window.intlTelInput(phoneInputField4, {
-      initialCountry: "ru",
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
-//popup-end
-
-const phoneInputField2 = document.querySelector("#phone2");
-    const phoneInput2 = window.intlTelInput(phoneInputField2, {
-      initialCountry: "ru",
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
-
-const phoneInputField3 = document.querySelector("#phone3");
-    const phoneInput3 = window.intlTelInput(phoneInputField3, {
-      initialCountry: "ru",
-      utilsScript:
-        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
 

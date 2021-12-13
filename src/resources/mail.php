@@ -5,8 +5,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
-	$site_mail = 'vm@domachisto.su';
-	$admin_email = 'gtasa3box@gmail.com';
+	$site_mail = 'site@domachisto.su';
+	$admin_email = 'vm@domachisto.su';
 	$project_name = 'DomaChisto';
 	$form_subject = 'DomaChisto';
 
