@@ -25,6 +25,11 @@ $('.tabs__nav-elem').on('click', function(){
     $($(this).data('target')).addClass('active')
 });
 
+//lazy-load
+$(function() {
+  $('.lazy').lazy();
+});
+
 //examples slider
 $('.slider-examples').slick({
     dots: true,
@@ -196,5 +201,6 @@ $(window).scroll(function(){
 $(document).ready(function() {
   $('input[name="phone"]').mask("+7 (999) 99-99-999");
 });
+
 
 
