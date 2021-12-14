@@ -203,4 +203,42 @@ $(document).ready(function() {
 });
 
 
+//calltouch
+(function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]
+  ["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]
+  ["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")
+  [0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find
+  === 'function',n=m?"init-min.js":"init.js";s.type="text/javascript";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})
+  (window,document,"ct","mod_idqe9parm1");
+
+//calltouch form
+
+jQuery(document).on('submit', '.b24-form', function() { 
+  var form = jQuery(this);
+  var phone = form.find('input[name="phone"]').val();
+  var fio = form.find('input[name="name"]').val(); 
+  var sub = 'Отслеживаемая форма обратной связи';
+  var ct_site_id = '46700'; /* ID сайта внутри Calltouch */
+  var ct_data = { 
+  fio: fio,
+  phoneNumber: phone,
+  subject: sub,
+  tags: tags,
+  requestUrl: location.href,
+  sessionId: window.ct('calltracking_params','qe9parm1').sessionId /* Чтобы определить источник заявки, передаем ID сессии Calltouch sessionId. Вместо wgblo7m9 нужно передавать mod_id скрипта Calltouch. */
+  };
+  /* При необходимости делаем проверку на корректность собранных с формы данных */
+  /* Например, обязательным для заполнения на форме является поле с телефоном, проверяем его наличие и не пустое ли оно */
+  if (typeof(phone)!='undefined' && phone!=''){
+  /* Выполняем AJAX-запрос */
+  jQuery.ajax({ 
+   url: 'https://api.calltouch.ru/calls-service/RestAPI/requests/'+ct_site_id+'/register/', 
+   dataType: 'json', 
+   type: 'POST', 
+   data: ct_data,
+   async: false /* Предположим, после отправки формы на сайте настроен редирект на другую страницу, поэтому используем параметр async: false для синхронной отправки запроса */
+  }); 
+  }
+  });
+
 
