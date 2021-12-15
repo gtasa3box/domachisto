@@ -7,6 +7,7 @@
     cursor: pointer;
     transition: 0.3s ease;
     z-index: 20;
+    display: none;
     @media (max-width:600px) {
         svg {
             width: 40px;
@@ -200,15 +201,8 @@
 }
 .fancybox__content {
     padding: 0;
-    .b24-form {
-        padding-bottom: 0 !important;
-    }
 }
-.backcall_popup {
-    .b24-form {
-        padding-bottom: 0 !important;
-    }
-}
+
 .b24-form-header-title {
     color: #353535 !important;
     font-size: 48px !important;

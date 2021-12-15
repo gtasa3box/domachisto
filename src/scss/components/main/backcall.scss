@@ -1,6 +1,7 @@
 .backcall {
     background-color: #F5F5F5;
     position: relative;
+    padding-bottom: 50px;
     .circle {
         width: 100px;
         height: 100px;
@@ -22,7 +23,7 @@
     &__agree {
         position: relative;
         z-index: 10;
-        bottom: 110px;
+        bottom: 70px;
         left: 30px;
         color: black;
         font-size: 12px;
@@ -162,6 +163,7 @@
     &_popup {
         max-width: 760px;
         display: none;
+        padding-bottom: 0;
         .backcall__btn {
             width: 100%;
             border-radius: 5px;
@@ -191,9 +193,6 @@
 .b24-form-wrapper {
     max-width: 100% !important;
     overflow: hidden !important;
-}
-.b24-form {
-    padding-bottom: 50px !important;
 }
 .b24-form-field-layout-section {
     color: #353535 !important;
