@@ -241,7 +241,7 @@ jQuery(document).on('submit', '.b24-form', function() {
   }
   });
 
-  var _ctreq_b24 = function(data) {
+var _ctreq_b24 = function(data) {
     var sid = 46700;
     var request = window.ActiveXObject?new ActiveXObject("Microsoft.XMLHTTP"):new XMLHttpRequest();
     var post_data = Object.keys(data).reduce(function(a,k){if(!!data[k]){a.push(k+'='+encodeURIComponent(data[k]));}return a},[]).join('&');
@@ -261,6 +261,11 @@ window.addEventListener('b24:form:submit', function(e){
         var sub = 'Заявка с формы Bitrix24 ' + location.hostname;
         var ct_data = {fio: fio, phoneNumber: phone, email: email, comment: comment, subject: sub, requestUrl: location.href, sessionId: window.call_value};
         console.log(ct_data);
-        if (!!phone || !!email) _ctreq_b24(ct_data);
+		if (!!phone){
+			phone = phone.replace(/[^0-9]/gim, '');
+			var cb_phone = phone.length == 10 ? '7'+phone : (phone.length == 11) ? '7'+phone.substring(1) : false;
+			if (cb_phone) { window.ctw.createRequest('domachisto_cb', cb_phone, [], function(success, data){ console.log(success, data) } ); }
+		}
+        // if (!!phone || !!email) _ctreq_b24(ct_data);
     }
 });
