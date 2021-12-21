@@ -138,6 +138,23 @@
                 padding: 20px;
             }
         }
+        &-blackcol {
+            background-color: #f29304;
+        }
+        &-head {
+            td {
+                font-weight: 500;
+                font-size: 21px;
+                @media (max-width:600px) {
+                    font-size: 16px;
+                    padding: 10px;
+                }
+                @media (min-width:601px) and (max-width:1099px) {
+                    font-size: 18px;
+                    padding: 20px;
+                }
+            }
+        }
     }
     &__info {
         font-size: 16px;
