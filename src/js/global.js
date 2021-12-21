@@ -163,6 +163,9 @@ $(function() {
   if(/washing-windows/.test(loc)) {
     $('#uluga8').addClass('active');
   }
+  if(/complex-cleaning/.test(loc)) {
+    $('#uluga9').addClass('active');
+  }
   //
   if(/prices/.test(loc)) {
     $('#price-nav').addClass('active');
