@@ -187,10 +187,10 @@ $(function() {
   if(/uborka-kottedzha-posle-remonta/.test(loc)) {
     $('#uluga16').addClass('active');
   }
-  if(/complex-cleaning/.test(loc)) {
+  if(/uborka-ofisov/.test(loc)) {
     $('#uluga17').addClass('active');
   }
-  if(/complex-cleaning/.test(loc)) {
+  if(/uborka-taunkhausa/.test(loc)) {
     $('#uluga18').addClass('active');
   }
   //
