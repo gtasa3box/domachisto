@@ -166,6 +166,33 @@ $(function() {
   if(/complex-cleaning/.test(loc)) {
     $('#uluga9').addClass('active');
   }
+  if(/generalnaya-uborka-ofisa/.test(loc)) {
+    $('#uluga10').addClass('active');
+  }
+  if(/klining-posle-dezinfekczii/.test(loc)) {
+    $('#uluga11').addClass('active');
+  }
+  if(/uborka-kvartir-posle-zatopleniya/.test(loc)) {
+    $('#uluga12').addClass('active');
+  }
+  if(/uborka-kvartir-posle-pozhara/.test(loc)) {
+    $('#uluga13').addClass('active');
+  }
+  if(/uborka-kvartirs/.test(loc)) {
+    $('#uluga14').addClass('active');
+  }
+  if(/uborka-kvartiry-pered-rozhdeniem-rebenka/.test(loc)) {
+    $('#uluga15').addClass('active');
+  }
+  if(/uborka-kottedzha-posle-remonta/.test(loc)) {
+    $('#uluga16').addClass('active');
+  }
+  if(/complex-cleaning/.test(loc)) {
+    $('#uluga17').addClass('active');
+  }
+  if(/complex-cleaning/.test(loc)) {
+    $('#uluga18').addClass('active');
+  }
   //
   if(/prices/.test(loc)) {
     $('#price-nav').addClass('active');
