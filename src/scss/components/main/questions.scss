@@ -16,7 +16,9 @@
         }
     }
     &__grid {
-
+        &_tabs {
+            width: 100%;
+        }
     }
     &__elem {
         width: 100%;
