@@ -68,6 +68,45 @@ $('.slider-examples').slick({
     ]
 });
 
+//cleaning-types-slider
+$('.slider-cleaning-types').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1099,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false,
+        autoplay: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 //employees slider
 $('.slider-employees').slick({
   dots: false,
