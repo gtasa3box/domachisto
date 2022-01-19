@@ -1,6 +1,7 @@
 //stock-close
 $('.close').on('click', function(){
     $($(this).data('target')).toggleClass('not-active')  
+    $('.header__burger').addClass('up')
 });
 //mob-nav
 $('.burger').on('click', function(){
