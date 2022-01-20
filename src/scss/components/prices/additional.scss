@@ -20,6 +20,8 @@
         margin: 50px -25px 0;
         @media (max-width:600px) {
             margin: 40px 0 0;
+            flex-wrap: nowrap;
+            overflow: scroll;
         }
         @media (min-width:601px) and (max-width:1099px) {
             margin: 50px 0 0;
