@@ -130,6 +130,9 @@
             font-family: 'Muller',sans-serif;
             padding: 30px;
             text-align: left;
+            &:last-child {
+                color: green;
+            }
             @media (max-width:600px) {
                 font-size: 12px;
                 padding: 10px;
@@ -137,6 +140,11 @@
             @media (min-width:601px) and (max-width:1099px) {
                 font-size: 14px;
                 padding: 20px;
+            }
+        }
+        .color-red {
+            td:last-child {
+                color: red;
             }
         }
         &-blackcol {
