@@ -70,8 +70,8 @@ $('.slider-examples').slick({
 
 //cleaning-types-slider
 $('.slider-cleaning-types').slick({
-  dots: false,
-  arrows: false,
+  dots: true,
+  arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 4,
@@ -85,8 +85,8 @@ $('.slider-cleaning-types').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
-        arrows: false,
+        dots: true,
+        arrows: true,
         autoplay: true
       }
     },
@@ -94,14 +94,16 @@ $('.slider-cleaning-types').slick({
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
       }
     }
   ]
