@@ -31,12 +31,24 @@
                 font-family: 'Muller',sans-serif;
                 color: #000;
                 margin-bottom: 20px;
+                position: relative;
+                width: 100%;
                 @media (max-width:600px) {
                     font-size: 14px;
                     margin-bottom: 10px;
+                    padding-right: 15px;
                 }
                 @media (min-width:601px) and (max-width:1099px) {
                     font-size: 16px;
+                }
+                &:before {
+                    content: '✓';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: green;
+                    font-size: 24px;
                 }
             }
         }
