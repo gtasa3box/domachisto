@@ -74,6 +74,8 @@
         @media (max-width:600px) {
             top: 24px;
             left: 0;
+            max-height: 300px;
+            overflow: scroll;
         }
         &.active {
             opacity: 1;
