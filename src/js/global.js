@@ -116,6 +116,7 @@ $('.slider-employees').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
+  centerMode: true,
   responsive: [
     {
       breakpoint: 1099,
@@ -139,7 +140,8 @@ $('.slider-employees').slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
       }
     }
   ]

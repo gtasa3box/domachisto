@@ -4,7 +4,7 @@
         margin-bottom: 60px;
     }
     &__content {
-        padding-bottom: 200px;
+        padding-bottom: 100px;
         position: relative;
         z-index: 2;
         @media (max-width:600px) {
@@ -55,8 +55,9 @@
         width: 580px;
         @media (max-width:600px) {
             max-width: 100%;
-            flex-direction: column;
+            // flex-direction: column;
             width: 100%;
+            overflow: scroll;
         }
         @media (min-width:601px) and (max-width:1099px) {
             max-width: 300px; 
@@ -70,14 +71,18 @@
         background-size: cover;
         cursor: pointer;
     }
+    &__hidden-gallery {
+        display: none;
+    }
     .img1 {
         width: 320px;
         height: 440px;
         @media (max-width:600px) {
-            width: 100%;
+            width: 70%;
             background-size: contain;
             background-repeat: no-repeat;
             margin-bottom: 10px;
+            flex: none;
         }
         @media (min-width:601px) and (max-width:1099px) {
             width: 150px;
@@ -91,6 +96,7 @@
         @media (max-width:600px) {
             max-width: 100%;
             background-size: contain;
+            background-position: center;
             background-repeat: no-repeat;
             margin-bottom: 10px;
         }
@@ -106,6 +112,7 @@
             max-width: 100%;
             background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
         }
         @media (min-width:601px) and (max-width:1099px) {
             width: 100px;
@@ -117,18 +124,19 @@
         margin: 0 0 0 auto;
         padding-left: 25px;
         color: #353535;
-        font-size: 16px;
+        font-size: 20px;
         font-family: 'Muller',Arial,sans-serif;
         line-height: 1.4;
         font-weight: 400;
         @media (max-width:600px) {
-            font-size: 12px; 
+            font-size: 16px; 
             padding-left: 0px;
             margin: 0;
             margin-top: 20px;
+            width: 100%;
         }
         @media (min-width:601px) and (max-width:1099px) {
-            font-size: 14px; 
+            font-size: 16px; 
         }
         a {
             color: #ff8562;
